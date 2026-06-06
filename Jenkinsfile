@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clonar repositorio') {
             steps {
-                git 'https://github.com/raulCangri24-ship-it/Actividad_11.git'
+                git branch: 'main', url: 'https://github.com/raulCangri24-ship-it/Actividad_11.git'
             }
         }
         stage('Instalar dependencias') {
